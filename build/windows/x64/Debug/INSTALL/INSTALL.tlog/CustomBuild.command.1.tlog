@@ -1,0 +1,10 @@
+^C:\USERS\PC\DOCUMENTS\GITHUB\PUBLICACIOAPPFLUTTER\BUILD\WINDOWS\CMAKEFILES\6CDCF31A588372DBD8420913FC00B90B\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

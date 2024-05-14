@@ -1,0 +1,10 @@
+^C:\USERS\PC\DOCUMENTS\GITHUB\PUBLICACIOAPPFLUTTER\BUILD\WINDOWS\CMAKEFILES\6CDCF31A588372DBD8420913FC00B90B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/PC/Documents/GitHub/PublicacioAppFlutter/windows -BC:/Users/PC/Documents/GitHub/PublicacioAppFlutter/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/PC/Documents/GitHub/PublicacioAppFlutter/build/windows/nintendo_db.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
